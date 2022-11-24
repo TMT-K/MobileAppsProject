@@ -11,11 +11,11 @@ export default function App() {
   return (
       <NavigationContainer>
         <Stack.Navigator  initialRouteName="Index">
-          <Stack.Screen name="Index" component={Index} options={{ title: 'MY CONTACTS' }}/>
-          <Stack.Screen name="Details" component={Details} options={{ title: 'CONTACT DETAILS' }} />
-          <Stack.Screen name="Create" component={Create} options={{ title: 'ADD CONTACT' }}/>
-          <Stack.Screen name="Edit" component={Edit} options={{ title: 'UPDATE CONTACT' }}/>
-          <Stack.Screen name="Delete" component={Delete} options={{ title: 'DELETE CONTACT' }}/>
+          <Stack.Screen name="Index" component={Index} options={{ title: 'Contacts' }}/>
+          <Stack.Screen name="Details" component={Details} options={{ title: 'Profile' }} />
+          <Stack.Screen name="Create" component={Create} options={{ title: 'Create contact' }}/>
+          <Stack.Screen name="Edit" component={Edit} options={{ title: 'Update contact' }}/>
+          <Stack.Screen name="Delete" component={Delete} options={{ title: 'Delete contact' }}/>
         </Stack.Navigator>
       </NavigationContainer>
   ); 

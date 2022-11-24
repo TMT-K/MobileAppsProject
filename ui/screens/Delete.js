@@ -19,22 +19,22 @@ export default function Delete(){
     }
     //JSX
     return (
-      <View>
-        <Text>Are you sure you want to delete this person?</Text>
-        <Text style={theme.label}>NAME:</Text>
+      <View >
+        <Text style={theme.label}>Name:</Text>
         <Text style={theme.ansewr}>{u.firstName} {u.lastName}</Text>
-        <Text style={theme.label}>AGE:</Text>
+        <Text style={theme.label}>Age:</Text>
         <Text style={theme.ansewr}>{u.age}</Text>
-        <Text style={theme.label}>EMAIL:</Text>
+        <Text style={theme.label}>Email:</Text>
         <Text style={theme.ansewr}>{u.email}</Text>
-        <Text style={theme.label}>PHONE:</Text>
+        <Text style={theme.label}>Phone number:</Text>
         <Text style={theme.ansewr}>{u.phone}</Text>
-        <Text style={theme.label}>DEPARTMENT:</Text>
+        <Text style={theme.label}>Department:</Text>
         <Text style={theme.ansewr}>{u.department}</Text>
-        <Text style={theme.label}>ADDRESS:</Text>
+        <Text style={theme.label}>Address:</Text>
         <Text style={theme.ansewr}>{`${u.address.street} ${u.address.suburb} ${u.address.state}`}</Text>
+        <Text style={theme.ansewr}>Do you want to delete this contact detail?</Text>
         <Pressable style={theme.deleteContactButton} onPress={submit}>
-                <Text style={theme.deleteContactButtonText}>DELETE</Text>
+                <Text style={theme.deleteContactButtonText}>Delete</Text>
         </Pressable>    
       </View>
     ); 
