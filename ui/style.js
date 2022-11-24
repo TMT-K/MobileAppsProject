@@ -2,7 +2,16 @@ import {StyleSheet} from 'react-native';
 //https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 const theme = StyleSheet.create({
     label:{
-        fontWeight:'bold'
+        // marginTop:10,
+        fontWeight:'bold',
+        marginLeft:'10%'
+    },
+    ansewr:{
+        marginLeft:'40%',
+        marginVertical:'auto',
+    },
+    border:{
+        borderBottomWidth:1
     },
     userTile:{
         display:'flex',
@@ -11,27 +20,37 @@ const theme = StyleSheet.create({
         borderWidth:1,
         borderColor:'#000',
         padding:5,
-        margin:5
+        margin:5,
+        marginHorizontal:50
     },
     userTileButtonContainer:{
         display:'flex',
         flexDirection:'row',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        
     },
     userTileButton:{
-        backgroundColor:'blue',
+        backgroundColor:'green',
         padding:5,
         marginLeft:2.5,
         minWidth:55,
-
+        
     },
     userTileButtonText:{
         color:'#fff',
         textAlign:'center'
     },
+    detailTitle:{
+        borderWidth:1,
+        marginBottom:10
+    },
     addContactButton:{
-        backgroundColor:'blue',
-        padding:5
+        backgroundColor:'green',
+        padding:5,
+        borderRadius:1000,
+        width:50,
+        alignSelf:'flex-end',
+        margin:'3%'
     },
     addContactButtonText:{
         color:'#fff',
@@ -39,16 +58,25 @@ const theme = StyleSheet.create({
     },
     deleteContactButton:{
         backgroundColor:'red',
-        padding:5
+        padding:5,
+        marginTop:10,
+        maxWidth:75,
+        width:'15%',
+        marginHorizontal:'auto'
     },
     deleteContactButtonText:{
         color:'#fff',
         textAlign:'center'
     },
     saveButton:{
-        backgroundColor:'blue',
+        backgroundColor:'gray',
         padding:5,
-        marginTop:5
+        marginTop:5,
+        marginLeft:5,
+        width:'15%',
+        alignSelf:'flex-end',
+        marginRight:'10%',
+        borderRadius:10,
     },
     saveButtonText:{
         color:'#fff',
@@ -68,7 +96,8 @@ const theme = StyleSheet.create({
         borderColor:'#000',
         borderWidth:1,
         margin:2.5,
-        padding:2.5
+        padding:2.5,
+        marginHorizontal:'10%'
     }
 }); 
 
